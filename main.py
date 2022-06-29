@@ -1,8 +1,10 @@
 from termcolor import cprint
 from tamagocha import Tamagocha
+from loader import Loader
 
 
 def main():
+	loader = Loader(n=100, start='^', end='^', interval=0.01, symbol='$', color='cyan', defsymbol='_', step=3)
 	print('Hi, this is tamagocha\n')
 	print('Write the name of your tamagocha:')
 	name = input()
@@ -12,12 +14,15 @@ def main():
 		do = input()
 		if do == '1' or do == 'eat' or do == 'Eat':
 			animal.eat()
+			print(loader)
 			print(animal)
 		elif do == '2' or do == 'sleep' or do == 'Sleep':
 			animal.sleep()
+			print(loader)
 			print(animal)
 		elif do == '3' or do == 'play' or do == 'Play':
 			animal.play()
+			print(loader)
 			print(animal)
 		elif do == '4' or do == 'exit' or do == 'Exit':
 			exit('You are exited from tamagocha')
