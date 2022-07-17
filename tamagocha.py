@@ -25,10 +25,10 @@ class Tamagocha:
 	def __str__(self):
 		return 99*'#' + '\n' + 44*'#' + ' tamagocha ' + 44*'#' + '\n' + 99*'#' + '\n' + \
 		f'Name: ' + '[' + self.name + ']' + ' ' + (99-len('Name: ')-len(self.name)-3)*'#' + '\n' + \
-		99*'#' + '\n' + 'Helth: ' + (self.helth//10)*'[+]' + ' ' + (99-len('Helth: ')-(3*self.helth//10)-1)*'#' + '\n' + 99*'#' + '\n' + \
+		99*'#' + '\n' + 'Helth:  ' + (self.helth//10)*'[+]' + ' ' + (99-len('Helth:  ')-(3*self.helth//10)-1)*'#' + '\n' + 99*'#' + '\n' + \
 		'Hungry: ' + (self.hungry//10)*'[+]' + ' ' + (99-len('Hungry: ')-(3*self.hungry//10)-1)*'#' + '\n' + 99*'#' + '\n' + \
-		'Sleep: ' + (self.fat//10)*'[+]' + ' ' + (99-len('Sleep: ')-(3*self.fat//10)-1)*'#' + '\n' + 99*'#' + '\n' + \
-		'Mood: ' + (self.mood//10)*'[+]' + ' ' + (99-len('Mood: ')-(3*self.mood//10)-1)*'#' + '\n' + 99*'#' + '\n' + \
+		'Sleep:  ' + (self.fat//10)*'[+]' + ' ' + (99-len('Sleep:   ')-(3*self.fat//10)-1)*'#' + '\n' + 99*'#' + '\n' + \
+		'Mood:   ' + (self.mood//10)*'[+]' + ' ' + (99-len('Mood:   ')-(3*self.mood//10)-1)*'#' + '\n' + 99*'#' + '\n' + \
 		'What do you want to do? ' + (99-len('What do you want to do? '))*'#' + '\n' + 99*'#' + '\n' \
 		'1 - Eat ' + (99-len('1 - Eat '))*'#' + '\n' + 99*'#' + '\n' + \
 		'2 - Sleep ' + (99-len('2 - Sleep '))*'#' + '\n' + 99*'#' + '\n' + \

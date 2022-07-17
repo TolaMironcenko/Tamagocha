@@ -4,7 +4,7 @@ from loader import Loader
 
 
 def main():
-	loader = Loader(n=100, start='^', end='^', interval=0.01, symbol='$', color='cyan', defsymbol='_', step=3)
+	loader = Loader(n=100, start='^', end='^', interval=0.001, symbol='$', color='cyan', defsymbol='_', step=3)
 	print('Hi, this is tamagocha\n')
 	print('Write the name of your tamagocha:')
 	name = input()
@@ -25,7 +25,8 @@ def main():
 			print(loader)
 			print(animal)
 		elif do == '4' or do == 'exit' or do == 'Exit':
-			exit('You are exited from tamagocha')
+			cprint('You are exited from tamagocha', 'green')
+			exit()
 		else:
 			cprint("I can't do this")
 
